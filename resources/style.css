@@ -1,0 +1,273 @@
+html {
+  font-size: 18px;
+  font-family: helvetica;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.company .container {
+  background-color: cadetblue;
+  color: white;
+  display: flex;
+  z-index: 2;
+}
+
+.company {
+padding-top: 1rem;
+}
+
+.company img {
+  height: 1.5rem;
+  margin: 1rem .5rem 1rem 2rem;
+}
+
+.company span {
+  flex-grow: 1;
+  margin: 1rem 0rem 1rem .5rem;
+  font-size: 1rem;
+}
+
+.company nav {
+  margin: 1rem 2rem 1rem 0rem;
+  display:flex;
+  align-items: center;
+}
+
+.company nav span {
+  margin: 0rem 0rem;
+}
+
+.company .products {
+  margin: 0rem 2rem 0rem 2rem;
+}
+
+.header {
+  display: block;
+  background: url("../images/glasses-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.banner {
+  height: 30rem;
+}
+
+.banner .container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.headline {
+  position: relative;
+  display: flex;
+  top: 10rem;
+  left: 2rem;
+  padding: 1.5rem 5rem;
+  background-color: white;
+
+}
+
+h1 {
+  margin: 0 0;
+}
+
+
+
+.product {
+  display: flex;
+  justify-content: center;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: 3rem;
+  width: 5rem;
+  height: 8rem;
+}
+
+.product img {
+width: 3.5rem;
+}
+
+.buisness-info {
+  display: flex;
+  justify-content: center;
+}
+
+.sections {
+  width: 35%;
+  position: relative;
+  top: 3rem;
+  margin-right: 5%;
+  margin-bottom: 4rem;
+}
+
+.buisness-info {
+  margin-bottom: 5rem;
+}
+
+.buisness-info .topics{
+  background-color: cadetblue;
+  font-weight: bold;
+  color: white;
+  display:flex;
+  width: 10rem;
+}
+
+.sections p {
+  margin: 1rem 0rem 0rem 0rem;
+}
+
+.topics span {
+  margin: .5rem 1.25rem .5rem 1.15rem;
+}
+
+footer {
+  background-color: azure;
+  padding: 4rem 2rem;
+  display: flex;
+  align-items: center;
+}
+
+footer img {
+  height: 1.5rem;
+  margin-left: 2rem;
+  margin-right: 1rem;
+}
+
+.company p {
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+
+.container {
+  width: 100%;
+}
+
+.headline h1 {
+  font-size: 1.33rem;
+  padding: .75rem 4rem .75rem 4rem;
+}
+
+.headline {
+  right: 0;
+  left: 0;
+  margin-right: 2rem;
+  top: 5rem;
+}
+
+.banner {
+  height: 22rem;
+}
+
+.company {
+  padding-top: 0;
+}
+
+}
+
+@media only screen and (max-width: 560px) {
+
+
+.container {
+  width: 100%;
+}
+.company span {
+  display: none;
+}
+
+.company p {
+  display:block;
+  position: relative;
+  left: 200px;
+  top: 5px;
+}
+
+.banner {
+  height: 17rem;
+}
+
+.headline h1 {
+  font-size: 1rem;
+  padding: 0rem 0rem;
+}
+
+.headline {
+  top: 9rem;
+  width: 100%;
+  text-align: center;
+  margin-right: 0;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.product {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 3.77rem;
+  margin-bottom: 3.77rem;
+}
+
+.disc {
+  font-size: .77rem;
+}
+
+.item {
+  margin: 1.54rem;
+  height: 6.50rem;
+}
+
+.buisness-info {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.sections {
+  width: 100%;
+  margin-right: 0;
+  margin-bottom: 4rem;
+}
+
+.sections .topics {
+  width: 100%;
+  max-width: none;
+  margin-right: 0;
+  text-align: center;
+}
+
+.topics span {
+  align-items: center;
+}
+
+.sections p {
+  padding: 1rem;
+  font-size: .77rem;
+}
+
+footer span {
+  display:none;
+}
+
+footer {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+}
